@@ -13,3 +13,13 @@ def get_vocabulary(input_str):
 
 def decode_string(input_str):
     return unidecode(input_str)
+
+
+def get_bag_representation(vocabulary, doc_words):
+    bag = [0] * len(vocabulary)
+    for v_index, v_word in enumerate(vocabulary):
+        for d_word in doc_words:
+            if v_word == d_word:
+                bag[v_index] = 1
+                break
+    return bag

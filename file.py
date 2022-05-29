@@ -9,6 +9,10 @@ def get_text(filename):
 
 
 def write_text_file(filename, str_list):
-    file = open(filename, 'a')
+    file = open(filename, 'w')
     for word in str_list:
         file.write(word + "\n")
+
+def write_singleline_file(filename, line):
+    file = open(filename, 'w')
+    file.write(line)
