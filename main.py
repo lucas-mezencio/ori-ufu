@@ -8,9 +8,12 @@
 # https://www.w3schools.com/python/python_arrays.asp
 
 
-from unidecode import unidecode
 import ori
 import file
+
+print("==============================")
+print("        EXERCICIO 1           ")
+print("==============================")
 
 input_str = file.get_text("io_files/input_text1.txt")
 
@@ -18,8 +21,7 @@ vocabulary = ori.get_vocabulary(input_str)
 
 file.write_text_file("io_files/output_01.txt", vocabulary)
 
-for word in vocabulary:
-    print(unidecode(word))
+print(vocabulary)
 
 print("==============================")
 print("        EXERCICIO 2           ")

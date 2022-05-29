@@ -13,6 +13,7 @@ def write_text_file(filename, str_list):
     for word in str_list:
         file.write(word + "\n")
 
+
 def write_singleline_file(filename, line):
     file = open(filename, 'w')
     file.write(line)
